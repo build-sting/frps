@@ -22,6 +22,5 @@ RUN if [ "$(uname -m)" = "x86_64" ]; then export PLATFORM=amd64 ; \
 	&& cd .. \
 	&& rm -rf *.tar.gz frp_${VERSION}_linux_${PLATFORM}
 
-VOLUME /frp
 
 CMD /frp/frps -c /frp/frps.ini
